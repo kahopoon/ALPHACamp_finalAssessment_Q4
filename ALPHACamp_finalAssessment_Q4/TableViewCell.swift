@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var timeLabel, arrivedStationLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
