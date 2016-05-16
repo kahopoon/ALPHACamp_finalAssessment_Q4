@@ -131,5 +131,5 @@ this is essential for above's alert notice, using indexpath row to grep destinat
 two label for data insertion
 
 ## TableView Cell UI
-very simple UI :)
+very simple UI :)  
 ![Alt text](tableviewCell.png?raw=true "tableviewCell") 
