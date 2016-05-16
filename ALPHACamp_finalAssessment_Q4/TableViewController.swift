@@ -17,7 +17,6 @@ class TableViewController: UITableViewController {
     func loadData() {
         // remove cache in exist
         metroInfo.removeAll()
-        print("test")
         HUD.show(.LabeledProgress(title: "可愛的捷運資訊", subtitle: "正在可愛地載入中。。。"))
         metroDataAPICall { (result) in
             let allRows = result["result"]["results"].arrayValue
