@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        metroDataAPICall { (result) in
+            print(result)
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
