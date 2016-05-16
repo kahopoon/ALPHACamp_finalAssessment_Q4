@@ -9,45 +9,50 @@
         <scene sceneID="gM6-fo-eSv">
             <objects>
                 <tableViewController storyboardIdentifier="TableViewController" id="L2w-jH-uGk" customClass="TableViewController" customModule="ALPHACamp_finalAssessment_Q4" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" id="6mm-C8-fIx">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" id="6mm-C8-fIx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="0.27909482759999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.792156862745098" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="rxZ-bk-OmH" userLabel="header">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.98039215686274506" green="0.792156862745098" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="89" id="JIF-9p-vqQ" customClass="TableViewCell" customModule="ALPHACamp_finalAssessment_Q4" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="89"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="99" id="JIF-9p-vqQ" customClass="TableViewCell" customModule="ALPHACamp_finalAssessment_Q4" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="53" width="600" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JIF-9p-vqQ" id="rqS-WV-TVP">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="98"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有輛可愛的捷運在" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzv-zh-imr">
-                                            <rect key="frame" x="12" y="12" width="136" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="12" y="12" width="104" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="站" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ud-1G-RvR">
-                                            <rect key="frame" x="63" y="41" width="136" height="21"/>
+                                            <rect key="frame" x="63" y="36" width="104" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="經過了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-Jr-lmg">
-                                            <rect key="frame" x="12" y="41" width="51" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="，究竟她最終會去到哪裡？。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maa-rE-UzE">
-                                            <rect key="frame" x="199" y="41" width="255" height="21"/>
+                                            <rect key="frame" x="12" y="36" width="51" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="這個時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R24-S0-SsK">
-                                            <rect key="frame" x="148" y="12" width="440" height="21"/>
+                                            <rect key="frame" x="116" y="12" width="472" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="究竟她最終會去到哪裡？。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maa-rE-UzE">
+                                            <rect key="frame" x="12" y="65" width="238" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -59,13 +64,13 @@
                                         <constraint firstItem="lbg-Jr-lmg" firstAttribute="leading" secondItem="Qzv-zh-imr" secondAttribute="leading" id="FxD-11-SMR"/>
                                         <constraint firstItem="R24-S0-SsK" firstAttribute="leading" secondItem="Qzv-zh-imr" secondAttribute="trailing" id="HbN-yJ-1DY"/>
                                         <constraint firstItem="2ud-1G-RvR" firstAttribute="width" secondItem="Qzv-zh-imr" secondAttribute="width" id="IUn-pI-c6Z"/>
+                                        <constraint firstItem="maa-rE-UzE" firstAttribute="top" secondItem="lbg-Jr-lmg" secondAttribute="bottom" constant="8" id="QMA-dT-bfA"/>
                                         <constraint firstItem="2ud-1G-RvR" firstAttribute="centerY" secondItem="lbg-Jr-lmg" secondAttribute="centerY" id="RtQ-aZ-95P"/>
                                         <constraint firstItem="Qzv-zh-imr" firstAttribute="leading" secondItem="rqS-WV-TVP" secondAttribute="leading" constant="12" id="WbI-xn-Q1R"/>
                                         <constraint firstItem="R24-S0-SsK" firstAttribute="centerY" secondItem="Qzv-zh-imr" secondAttribute="centerY" id="fCS-Gl-zOQ"/>
-                                        <constraint firstItem="maa-rE-UzE" firstAttribute="leading" secondItem="2ud-1G-RvR" secondAttribute="trailing" id="g9W-YR-Bhf"/>
-                                        <constraint firstItem="maa-rE-UzE" firstAttribute="centerY" secondItem="2ud-1G-RvR" secondAttribute="centerY" id="jO2-u8-9Hc"/>
                                         <constraint firstAttribute="trailing" secondItem="R24-S0-SsK" secondAttribute="trailing" constant="12" id="mha-JU-1PA"/>
                                         <constraint firstItem="lbg-Jr-lmg" firstAttribute="top" secondItem="Qzv-zh-imr" secondAttribute="bottom" constant="8" id="nIh-jy-MeS"/>
+                                        <constraint firstItem="maa-rE-UzE" firstAttribute="leading" secondItem="lbg-Jr-lmg" secondAttribute="leading" id="nMo-P3-4C9"/>
                                         <constraint firstItem="2ud-1G-RvR" firstAttribute="leading" secondItem="lbg-Jr-lmg" secondAttribute="trailing" id="thI-aP-rcu"/>
                                     </constraints>
                                 </tableViewCellContentView>
