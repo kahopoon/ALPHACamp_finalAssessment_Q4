@@ -14,6 +14,7 @@
 		1168D5FC1CE9C5900082B384 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168D5FB1CE9C5900082B384 /* TableViewController.swift */; };
 		1168D5FE1CE9C5AF0082B384 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168D5FD1CE9C5AF0082B384 /* TableViewCell.swift */; };
 		1168D6001CE9C5F30082B384 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168D5FF1CE9C5F30082B384 /* APICall.swift */; };
+		1168D6041CE9CD330082B384 /* arrivedMetroInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168D6031CE9CD330082B384 /* arrivedMetroInfo.swift */; };
 		D817C5A3D44A0BC47119477A /* Pods_ALPHACamp_finalAssessment_Q4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB54457066815389A2BE0FD4 /* Pods_ALPHACamp_finalAssessment_Q4.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		1168D5FB1CE9C5900082B384 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1168D5FD1CE9C5AF0082B384 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1168D5FF1CE9C5F30082B384 /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		1168D6031CE9CD330082B384 /* arrivedMetroInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arrivedMetroInfo.swift; sourceTree = "<group>"; };
 		24F1136D3B6BCD19EC4ED60C /* Pods-ALPHACamp_finalAssessment_Q4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q4.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q4/Pods-ALPHACamp_finalAssessment_Q4.release.xcconfig"; sourceTree = "<group>"; };
 		CB54457066815389A2BE0FD4 /* Pods_ALPHACamp_finalAssessment_Q4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPHACamp_finalAssessment_Q4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,8 +67,9 @@
 		110540111CE9C1DB001ABE5E /* ALPHACamp_finalAssessment_Q4 */ = {
 			isa = PBXGroup;
 			children = (
+				1168D6011CE9CD130082B384 /* API */,
+				1168D6021CE9CD220082B384 /* DataModel */,
 				110540121CE9C1DB001ABE5E /* AppDelegate.swift */,
-				1168D5FF1CE9C5F30082B384 /* APICall.swift */,
 				1168D5FD1CE9C5AF0082B384 /* TableViewCell.swift */,
 				1168D5FB1CE9C5900082B384 /* TableViewController.swift */,
 				110540161CE9C1DB001ABE5E /* Main.storyboard */,
@@ -75,6 +78,22 @@
 				1105401E1CE9C1DB001ABE5E /* Info.plist */,
 			);
 			path = ALPHACamp_finalAssessment_Q4;
+			sourceTree = "<group>";
+		};
+		1168D6011CE9CD130082B384 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1168D5FF1CE9C5F30082B384 /* APICall.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		1168D6021CE9CD220082B384 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1168D6031CE9CD330082B384 /* arrivedMetroInfo.swift */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 		889188A9CBAA5A39D077A3C3 /* Frameworks */ = {
@@ -216,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1168D6041CE9CD330082B384 /* arrivedMetroInfo.swift in Sources */,
 				1168D5FE1CE9C5AF0082B384 /* TableViewCell.swift in Sources */,
 				110540131CE9C1DB001ABE5E /* AppDelegate.swift in Sources */,
 				1168D6001CE9C5F30082B384 /* APICall.swift in Sources */,

@@ -7,24 +7,46 @@
 //
 
 import UIKit
+import PKHUD
 import SwiftyJSON
 
 class TableViewController: UITableViewController {
 
+    var metroInfo:[arrivedMetroInfo] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        HUD.show(.LabeledProgress(title: "可愛的捷運資訊載入中。。。", subtitle: "稍候喔"))
         metroDataAPICall { (result) in
-            print(result)
+            let allRows = result["result"]["results"].arrayValue
+            for row in allRows {
+                let eachCuteCuteMetro = arrivedMetroInfo()
+                eachCuteCuteMetro.id = row["_id"].stringValue
+                eachCuteCuteMetro.station = row["Station"].stringValue
+                eachCuteCuteMetro.destination = row["Destination"].stringValue
+                eachCuteCuteMetro.updatedTime = self.timeStandardToHumanReadable(row["UpdateTime"].stringValue)
+                self.metroInfo.append(eachCuteCuteMetro)
+            }
         }
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    func timeStandardToHumanReadable(nonFriendlyString: String) -> String {
+        // this string can be like
+        // 2016-05-16T18:00:51.953     or like
+        // 2016-05-16T18:00:51.95      or even
+        // 2016-05-16T18:00:51         that will be nil when extracting, i love this api...
+        let sourceString = nonFriendlyString
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        dateFormatter.dateFormat = sourceString.characters.count == 23 ? "yyyy-MM-dd'T'HH:mm:ss.SSS" : (sourceString.characters.count == 22 ? "yyyy-MM-dd'T'HH:mm:ss.SS" : "yyyy-MM-dd'T'HH:mm:ss")
+        let nsdate = dateFormatter.dateFromString(sourceString)
+        let outputDateFormatter = NSDateFormatter()
+        outputDateFormatter.dateFormat = "yyyy年MM月dd日HH時mm分"
+        return outputDateFormatter.stringFromDate(nsdate!)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
